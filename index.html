@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da memória</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <main>
+        <h1 class="titulo">Jogo da memoria</h1>
+        
+        <div class="select">
+            <span class="nivel">
+                <span class="txt-nivel" id="txtNivel" data-value="facil">
+                    Nível fácil
+                </span>
+                <i class="bx bx-chevron-down"></i>
+            </span>
+            <ul class="lista-suspensa">
+                <li class="opcao ativa" data-value="facil">Nível fácil</li>
+                <li class="opcao" data-value="medio">Nível médio</li>
+                <li class="opcao" data-value="dificil">Nível difícil</li>
+            </ul>
+        </div>
+
+        <div class="container-cartas facil"></div>
+    </main>
+
+    <div class="container-modal">
+        <div class="modal">
+            <h1 class="titulo-modal">Buuh!!</h1>
+
+            <button class="fechar-modal" aria-label="Fechar janela de parabenização">
+                <img src="./src/img/web.svg" alt="Teia de aranha" class="teia">
+            </button>
+
+            <p class="texto-modal">
+                Parabéns, você terminou esse jogo da memória. Experimente jogar uma outra dificuldade ou jogue na mesma novamente.
+            </p>
+
+            <button class="jogar-novamente">
+                Jogar novamente
+            </button>
+        </div>
+    </div>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
